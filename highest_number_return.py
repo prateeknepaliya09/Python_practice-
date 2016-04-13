@@ -17,29 +17,30 @@ def highestNumber(l):
 
 
 print highestNumber ([-1,-55,-12])
-
+##########################################################################    
 
 """Define a function max() that takes two numbers as arguments 
 and returns the largest of them. 
 Without using max() of python inbuilt"""
 
-def max(num1, num2):
-  if num1 > num2:
-    return num1
+def max(n1, n2):
+  if n1 > n2:
+    return n1
   else:
-    return num2
+    return n2
 
 #test
 print max(3, 5)
 print max(10, 6)
 
 
-###########################################################################
+##########################################################################   
 
-def highestnumber(l):
-    l.sort()
-    return l[-1]
+#optimized
+def returnhigh(l):
+    l.sort() #SORTING
+    return l[-1]  #returns last element
     
 
-print highestnumber([77,48,19,17,93,90])   
+print returnhigh([77,48,19,17,93,90])   
 
