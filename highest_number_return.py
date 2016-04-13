@@ -42,5 +42,5 @@ def returnhigh(l):
     return l[-1]  #returns last element
     
 
-print returnhigh([77,48,19,17,93,90])   
+print returnhigh([77,48,19,17,93,93.0])   
 
