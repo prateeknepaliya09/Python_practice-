@@ -32,3 +32,13 @@ def max(num1, num2):
 #test
 print max(3, 5)
 print max(10, 6)
+
+
+###########################################################################
+
+def highestnumber(l):
+    l.sort()
+    return l[-1]
+    
+
+print highestnumber([77,48,19,17,93,90])   
