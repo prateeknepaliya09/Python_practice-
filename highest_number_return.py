@@ -16,7 +16,7 @@ def highestNumber(l):
     return myMax
 
 
-print highestNumber ([77,48,19,17,93,90])
+print highestNumber ([-1,-55,-12])
 
 
 """Define a function max() that takes two numbers as arguments 
@@ -42,3 +42,4 @@ def highestnumber(l):
     
 
 print highestnumber([77,48,19,17,93,90])   
+
