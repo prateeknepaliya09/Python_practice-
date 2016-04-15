@@ -14,6 +14,18 @@ import string
 
 ignored = string.punctuation + " "
 
+def is_palindrome1(str):
+    my_str = str
+    rev_str = reversed(my_str)
+    if list(my_str) == list(rev_str):
+        return True
+    else:
+        return False
+        
+###########################################################################
+
+#optimised
+
 def is_palindrome(str):
   cleanstr = ""
   for i in str:
@@ -21,8 +33,12 @@ def is_palindrome(str):
 
   return cleanstr.lower() == cleanstr[::-1].lower()
 
+#############################################################################
+  
+
+
 #test
 print is_palindrome("Go hang a salami I'm a lasagna hog.")
-print is_palindrome("Was it a rat I saw?")
+print is_palindrome("Was it a rat I saw")
 print is_palindrome("Dammit, I'm mad!")
-print is_palindrome("This is not a palindrome")
+print is_palindrome1("This is not a palindrome")
