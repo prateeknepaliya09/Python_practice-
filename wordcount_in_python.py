@@ -6,7 +6,7 @@ Created on Fri Apr 15 23:48:37 2016
 """
 
 """Python program for word count in file."""
-"""
+
 filename = "J:\shakes2.txt"
 numLines = 0
 numwords = 0
@@ -35,7 +35,7 @@ for word in file.read().split():
         wordcount[word] += 1
 for k,v in wordcount.items():
     print k, v
-    """
+    
 #############################################################################    
 
 fname = "J:\shakes.txt"
