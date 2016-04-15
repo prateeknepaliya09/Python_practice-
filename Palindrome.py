@@ -30,15 +30,11 @@ def is_palindrome(str):
   cleanstr = ""
   for i in str:
     cleanstr += "" if i in ignored else i 
-
-  return cleanstr.lower() == cleanstr[::-1].lower()
+    return cleanstr.lower() == cleanstr[::-1].lower()
 
 #############################################################################
+
+#more
+def is_palindrome2(n):
+    return str(n) == str(n)[::-1]
   
-
-
-#test
-print is_palindrome("Go hang a salami I'm a lasagna hog.")
-print is_palindrome("Was it a rat I saw")
-print is_palindrome("Dammit, I'm mad!")
-print is_palindrome1("This is not a palindrome")
